@@ -1,8 +1,8 @@
 # SoC
-System on chip with veliog
+##System on chip with veliog
 
-#1. APB Bridge FSM
-
+## 1. APB Bridge FSM
+<pre><code>
 //Instead of reset=0,IDLE=1,SETUP=2,ENABLE=3,..
 //do this when it's low power
 `define IDLE 3`b001
@@ -47,3 +47,5 @@ end
 // OUTPUT calculation
 assign PSELx = (state == 'SETUP || state == 'ENABLE)
 // Mealy 
+
+</code></pre>
